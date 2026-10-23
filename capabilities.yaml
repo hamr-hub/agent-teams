@@ -1,0 +1,14 @@
+# Tools available per tier. Each generator maps these onto its own tool names.
+tools:
+  read: [read, grep, glob, bash]
+  write: [read, write, edit, bash, grep, glob, todowrite]
+  control: [task_query, task_output, task_stop]
+  web: [web_fetch]
+
+claude_tools:
+  read: [Read, Grep, Glob, Bash]
+  write: [Read, Write, Edit, Bash, Grep, Glob, TodoWrite]
+
+claude_models:
+  # Subagent model: inherit keeps the same model as the main session.
+  default: inherit
